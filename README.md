@@ -1,1 +1,1 @@
-Iam solving problems and categorizing based on their level of difficulty 
+Iam solving problems and categorizing them based on their level of difficulty 
