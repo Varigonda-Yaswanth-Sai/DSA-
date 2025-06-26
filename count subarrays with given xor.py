@@ -35,3 +35,7 @@ class Solution:
             count+=mpp[x]
             mpp[xor]+=1
         return count
+arr = [4, 2, 2, 6, 4]
+k = 6
+sol=Solution()
+print(sol.subarrayXor(arr,k))
