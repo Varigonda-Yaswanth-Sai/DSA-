@@ -38,3 +38,6 @@ class Solution:
         for i in range(1,numRows+1):
             res.append(self.generaterow(i))
         return res
+numRows=int(input("Enter the numRow: "))
+sol=Solution()
+print(sol.generate(numRows))
