@@ -37,4 +37,6 @@ class Solution:
                 else:
                     hashmap[Sum]=i
         return max_len
-                
+arr=[15, -2, 2, -8, 1, 7, 10, 23] 
+sol=Solution()
+print()
