@@ -48,3 +48,6 @@ class Solution:
                     while j<k and arr[k]==arr[k+1]:
                         k-=1
         return res
+arr = [-1,0,1,2,-1,-4]
+sol = Solution()
+print(sol.triplets(arr))
