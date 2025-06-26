@@ -54,4 +54,6 @@ class Solution:
         if count2>len(arr)//3:
             res.append(majority2)
         return sorted(res)
-        
+arr = [2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6]
+sol=Solution()
+print(sol.findMajority(arr))
