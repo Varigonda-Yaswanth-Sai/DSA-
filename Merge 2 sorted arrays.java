@@ -23,6 +23,7 @@ Constraints:
 
 import java.util.*;
 class Solution {
+    // swap if arr1[i]>arr2[j]
     private void swapIfGreater(int arr1[],int arr2[],int i,int j){
         if(arr1[i]>arr2[j]){
             int temp=arr1[i];
@@ -35,21 +36,26 @@ class Solution {
         int m=arr2.length;
         int len=n+m;
         int gap=(len/2)+(len%2);
+        // initial gap
         while(gap>0){
             int left=0;
             int right=left+gap;
             while(right<len){
+                // arr1 and arr2
                 if(left<n && right>=n){
                     swapIfGreater(arr1,arr2,left,right-n);
                 }
+                // both in arr2
                 else if(left>=n && right<len){
                     swapIfGreater(arr2,arr2,left-n,right-n);
                 }
+                // both in arr1
                 else{
                     swapIfGreater(arr1,arr1,left,right);
                 }
                 left++;right++;
             }
+            // reduce gap for next iteration
             if(gap==1) break;
             gap=(gap/2)+(gap%2);
         }
