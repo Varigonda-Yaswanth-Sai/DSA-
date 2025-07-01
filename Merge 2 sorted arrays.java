@@ -1,4 +1,4 @@
-Given two sorted arrays a[] and b[] of size n and m respectively, the task is to merge them in sorted order without using any extra space. Modify a[] so that it contains the first n elements and modify b[] so that it contains the last m elements.
+/*Given two sorted arrays a[] and b[] of size n and m respectively, the task is to merge them in sorted order without using any extra space. Modify a[] so that it contains the first n elements and modify b[] so that it contains the last m elements.
 
 Examples:
 
@@ -20,6 +20,7 @@ Explanation: After merging two sorted arrays we get 0 1 2 3.
 Constraints:
 1 <= a.size(), b.size() <= 105
 0 <= a[i], b[i] <= 107
+*/
 
 import java.util.*;
 class Solution {
